@@ -8,7 +8,8 @@ import org.testng.Assert;
 public class AddToCart {
     POMPage oc=new POMPage();
     @And("I click on the shopping cart link in the success message")
-    public void iClickOnTheShoppingCartLinkInTheSuccessMessage() {
+    public void iClickOnTheShoppingCartLinkInTheSuccessMessage() throws InterruptedException {
+        Thread.sleep(3000);
         oc.clickMethod(oc.getShoppingCartLink());
     }
 

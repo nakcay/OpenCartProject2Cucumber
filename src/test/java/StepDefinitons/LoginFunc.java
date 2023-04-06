@@ -30,9 +30,9 @@ public class LoginFunc {
     }
 
     @And("I navigate to OpenCart web page again")
-    public void iNavigateToOpenCartWebPageAgain() throws InterruptedException {
-        Thread.sleep(3000);
+    public void iNavigateToOpenCartWebPageAgain()  {
         BasicDriver.getDriver().get("https://opencart.abstracta.us/");
+        Assert.assertTrue(oc.getLoginOnRegisterPage().isDisplayed());
 
     }
 }

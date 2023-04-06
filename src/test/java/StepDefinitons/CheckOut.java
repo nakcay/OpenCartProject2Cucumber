@@ -15,15 +15,24 @@ public class CheckOut {
     POMPage oc=new POMPage();
     @And("I click on the checkout button in the shopping cart page")
     public void iClickOnTheCheckoutButtonInTheShoppingCartPage() {
+        oc.clickMethod(oc.getCheckoutButtonOnTheBottom());
 
     }
 
     @And("I select i want to use a new address option")
     public void iSelectIWantToUseANewAddressOption() {
+        oc.clickMethod(oc.getWannaUseANewAddressRadioButton());
     }
 
     @Then("user should see all the text field Placeholder fields")
     public void userShouldSeeAllTheTextFieldPlaceholderFields() {
+        Assert.assertTrue(oc.getFirstNamePLaceHolder().isDisplayed());
+        Assert.assertTrue(oc.getLastNamePLaceHolder().isDisplayed());
+        Assert.assertTrue(oc.getCompanyPLaceHolder().isDisplayed());
+        Assert.assertTrue(oc.getAddress1PLaceHolder().isDisplayed());
+        Assert.assertTrue(oc.getAddress2PLaceHolder().isDisplayed());
+        Assert.assertTrue(oc.getCityPLaceHolder().isDisplayed());
+        Assert.assertTrue(oc.getPostalCodePLaceHolder().isDisplayed());
     }
 
     @Given("I navigate to OpenCart web page with chrome browser")

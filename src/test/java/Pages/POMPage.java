@@ -539,6 +539,59 @@ public class POMPage extends MyMethods {
 
     @FindBy(css = ".alert.alert-danger.alert-dismissible")
     private WebElement warningMessageForGiftCertification;
+    @FindBy(xpath = "(//input[@type='radio'])[2]")
+    private WebElement wannaUseANewAddressRadioButton;
+    @FindBy(xpath = "(//input[@type='text'])[2]")
+    private WebElement firstNamePLaceHolder;
+
+    @FindBy(xpath = "(//input[@type='text'])[3]")
+    private WebElement lastNamePLaceHolder;
+
+    @FindBy(xpath = "(//input[@type='text'])[4]")
+    private WebElement companyPLaceHolder;
+
+    @FindBy(xpath = "(//input[@type='text'])[5]")
+    private WebElement address1PLaceHolder;
+
+    @FindBy(xpath = "(//input[@type='text'])[6]")
+    private WebElement address2PLaceHolder;
+
+    @FindBy(xpath = "(//input[@type='text'])[7]")
+    private WebElement cityPLaceHolder;
+    @FindBy(xpath = "(//input[@type='text'])[8]")
+    private WebElement postalCodePLaceHolder;
+
+    public WebElement getWannaUseANewAddressRadioButton() {
+        return wannaUseANewAddressRadioButton;
+    }
+
+    public WebElement getFirstNamePLaceHolder() {
+        return firstNamePLaceHolder;
+    }
+
+    public WebElement getLastNamePLaceHolder() {
+        return lastNamePLaceHolder;
+    }
+
+    public WebElement getCompanyPLaceHolder() {
+        return companyPLaceHolder;
+    }
+
+    public WebElement getAddress1PLaceHolder() {
+        return address1PLaceHolder;
+    }
+
+    public WebElement getAddress2PLaceHolder() {
+        return address2PLaceHolder;
+    }
+
+    public WebElement getCityPLaceHolder() {
+        return cityPLaceHolder;
+    }
+
+    public WebElement getPostalCodePLaceHolder() {
+        return postalCodePLaceHolder;
+    }
 }
 
 

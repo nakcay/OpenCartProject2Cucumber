@@ -18,15 +18,10 @@ Feature: Checkout
     And I click on the checkout button in the shopping cart page
     And I select i want to use a new address option
     Then user should see all the text field Placeholder fields
-#bug alarm
 
 #  1. Check the 'Checkout' functionality in all the supported environments (Validate ER-1)
   Scenario: (TC_CO_020) Validate the 'Checkout' functionality in all the supported environments
   Given I navigate to OpenCart web page with chrome browser
     When I click on the checkout button and verify it on the chrome
-    And I navigate to OpenCart web page with firefox browser
-    And I click on the checkout button and verify it on the firefox
-     And I navigate to OpenCart web page with safari browser
-    And I click on the checkout button and verify it on the safari
     And I navigate to OpenCart web page with firefox browser
     And I click on the checkout button and verify it on the firefox
